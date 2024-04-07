@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    footer{
+        background: #343434;
+        padding-top: 50px;
+    }
+    .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #00abf0;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: #00abf0;
+    }
+    .social-icons i:hover{
+        color: #00abf0;
+    }
+    .bottom-bar{
+        background: #112e42;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color: #343434;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+</style>
+<body>
+<!----------------------------------------Header Section------------------------------------------->
+    <header class="header">
+        <div class="logo">Portia.</div>    
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="about.html" >About Me</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+<!----------------------------------------Video Section------------------------------------------->
+<section class="section1">
+    <div class="video-overlay"></div>
+    <video autoplay muted loop>
+        <source src="media/Programmer Motivation - Never Stop PROGRAMMING.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+   
+</section>
+<!----------------------------------------About me Section------------------------------------------->
+<section class="section2">
+    <div class="container">
+        <h1>Welcome to Our Website</h1>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+            <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna. Etiam vitae tortor.</p>
+            <div class="circle-photo">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!----------------------------------------Footer Section------------------------------------------->
+<footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Address</h3>
+                <p>123 </p>
+                <p>Phone:+121 56556 565556</p>
+                <p>Address:Your Address 123 street</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67891076543!2dLongitude!3dLatitude!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU1JzM4LjgiTiAxMjnCsDU1JzEzLjkiRQ!5e0!3m2!1sen!2sus!4v1608385445321!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>               
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <ul class="social-icons">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+               </ul>
+            <p>&copy; 2023 your company . All rights reserved</p>
+        </div>
+</footer>
+</body>
+</html>
